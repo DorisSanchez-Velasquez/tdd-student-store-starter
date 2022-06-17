@@ -36,17 +36,21 @@ export default function App() {
       filterSearch(searchValue)
   }
 
-  //HANDLER FUNCTIONS
+  //SEARCH INPUT FUNCTIONS
   function filterSearch(searchInput)
   {
+    filteredProducts=[];
     console.log("This is search input: " + searchInput);
     console.log("Entering filter:")
     filteredProducts = products.filter((product) =>
        {return product.name.includes(searchInput)}
     )
+    console.log(filteredProducts);
   }
 
   filterSearch(searchInput)
+
+  
 
   let searchCategories = (searchValue) =>
   {
@@ -57,6 +61,7 @@ export default function App() {
 
   function filterSearchCategories(searchInput)
   {
+    filteredProducts = [];
     console.log("This is search input: " + searchInput);
     console.log("Entering filter:")
     filteredProducts = products.filter((product) =>
@@ -64,7 +69,9 @@ export default function App() {
     )
   }
 
-  filterSearchCategories(searchInput)
+   filterSearchCategories(searchInput)
+
+  //HANDLER FUNCTIONS
 
   function handleOnToggle(evt)
   {
