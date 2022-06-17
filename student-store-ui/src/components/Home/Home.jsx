@@ -7,9 +7,8 @@ export default function Home(props) {
   const {products} = props;
   return (
     <div className="home">
-      <p>Home</p>
       <Hero />
-      <ProductGrid products = {products}/>
+      <ProductGrid products = {props.products} handleAddItemToCart={props.handleAddItemToCart} handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
     </div>
   )
 }

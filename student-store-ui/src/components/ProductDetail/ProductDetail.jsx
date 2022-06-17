@@ -1,7 +1,12 @@
 import * as React from "react"
+import useState from "react"
 
 export default function ProductDetail() {
+  const [product, setProduct] = useState(0)
+
   return (
-    console.log("Entered Product Detail")
+    <div className="product-detail">
+
+    </div>
   )
 }

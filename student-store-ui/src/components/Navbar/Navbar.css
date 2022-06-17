@@ -1,0 +1,39 @@
+.navbar
+{
+    background-color: #2b4344;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    color: #FFFFFF;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h3, .logo 
+{
+    justify-content: center;
+    display:inline-block;
+}
+
+#img-logo
+{
+    width: 70px;
+    margin-left: 50px
+}
+
+.all-nav-buttons
+{
+    float:right;
+    align-items: center;
+    margin-top: auto;
+    vertical-align: center;
+}
+
+h3
+{
+    margin-right: 50px;
+}
+
+
+
+
