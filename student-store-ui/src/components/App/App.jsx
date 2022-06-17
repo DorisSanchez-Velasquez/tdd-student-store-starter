@@ -20,8 +20,52 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [shoppingCart, setShoppingCart] = useState([]);
   const [checkoutForm, setCheckoutForm] = useState(0);
+  const [searchInput, setSearchInput] = useState("");
+
+  //OBJECTS AND VARIABLES
+  let filteredProducts = [];
+  let shoppingCartItem = {
+    itemId: 0,
+    quantity: 0
+  }
+  
+
+  let searchItems = (searchValue) =>
+  {
+      setSearchInput(searchValue)
+      filterSearch(searchValue)
+  }
 
   //HANDLER FUNCTIONS
+  function filterSearch(searchInput)
+  {
+    console.log("This is search input: " + searchInput);
+    console.log("Entering filter:")
+    filteredProducts = products.filter((product) =>
+       {return product.name.includes(searchInput)}
+    )
+  }
+
+  filterSearch(searchInput)
+
+  let searchCategories = (searchValue) =>
+  {
+      setSearchInput(searchValue)
+      filterSearchCategories(searchValue)
+  }
+
+
+  function filterSearchCategories(searchInput)
+  {
+    console.log("This is search input: " + searchInput);
+    console.log("Entering filter:")
+    filteredProducts = products.filter((product) =>
+       {return product.category.includes(searchInput)}
+    )
+  }
+
+  filterSearchCategories(searchInput)
+
   function handleOnToggle(evt)
   {
     evt.preventDefault();
@@ -34,6 +78,7 @@ export default function App() {
         setIsOpen(true)
       }
   }
+
 
   function handleAddItemToCart(productId)
   {
@@ -58,7 +103,7 @@ export default function App() {
   //AXIOS COMMAND TO GET PRODUCTS DISPLAY
    async function getProducts()
    {
-    setIsFetching(true)
+     setIsFetching(true)
      const response = await axios.get('https://codepath-store-api.herokuapp.com/store')
      .then(function (response) {
         console.log(response.data)
@@ -81,10 +126,10 @@ export default function App() {
         <main>
           {/* YOUR CODE HERE! */}
           <Navbar />
-          <Sidebar isOpen={isOpen} shoppingCart={shoppingCart} products={products} checkoutForm={checkoutForm} handleOnCheckoutFormChange={handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} handleonToggle={handleOnToggle}/>
+          <Sidebar isOpen={isOpen} shoppingCart={shoppingCart} products={products} checkoutForm={checkoutForm} handleOnCheckoutFormChange={handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} handleonToggle={handleOnToggle} />
 
           <Routes>
-            <Route path="/" element={<Home products= {products} handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart}/>}></Route>
+            <Route path="/" element={<Home products= {products} filteredProducts={filteredProducts} handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart} searchItems={searchItems} searchCategories={searchCategories}/>}></Route>
             <Route path="/products/:productId" element={<ProductDetail />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>

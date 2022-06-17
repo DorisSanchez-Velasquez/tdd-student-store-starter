@@ -1,0 +1,19 @@
+.search
+{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    grid-gap: 10%;
+    margin-top: 50px;
+}
+
+.cat-button
+{
+    margin-left: 10px;
+    background-color: #00c385;
+    color: #FFFFFF;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

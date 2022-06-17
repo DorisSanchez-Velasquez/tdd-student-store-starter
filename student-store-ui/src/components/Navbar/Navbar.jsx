@@ -9,10 +9,10 @@ export default function Navbar() {
       <Logo />
 
       <div className="all-nav-buttons">
-        <h3>Home</h3>
-        <h3>About Us</h3>
-        <h3>Contact Us</h3>
-        <h3>Buy Now</h3>
+        <h3 href="#home">Home</h3>
+        <h3 href="#about">About Us</h3>
+        <h3 href="#contact">Contact Us</h3>
+        <h3 href="#buy">Buy Now</h3>
       </div>
 
     </nav>

@@ -38,6 +38,11 @@
   background-color: #ffffff;
 }
 
+.product-card:hover{
+  transform: scale(1.2);
+  border: 3px solid #00c385
+}
+
 #card-image
 {
   width: 275px;
