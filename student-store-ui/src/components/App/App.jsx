@@ -5,6 +5,7 @@ import Home from "../Home/Home"
 import ProductDetail from "../ProductDetail/ProductDetail"
 import NotFound from "../NotFound/NotFound"
 import Footer from "../Footer/Footer"
+import About from "../About/About"
 import {useState, useEffect} from "react"
 import axios from "axios"
 import "./App.css"
@@ -87,6 +88,8 @@ export default function App() {
             <Route path="/products/:productId" element={<ProductDetail />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
+
+          <About />
 
           <Footer />
           

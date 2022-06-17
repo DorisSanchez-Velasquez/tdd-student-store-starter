@@ -6,7 +6,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #2b4344;
+    background-color: #2c4047;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -14,7 +14,7 @@
 .toggle-button
 {
     display: block;
-    background-color: #2b4344;
+    background-color: #2c4047;
     border: none;
 }
 
