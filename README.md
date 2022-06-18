@@ -278,3 +278,31 @@ The following specifications were met on the Express backend and the React front
         - **optional**:
           - [ ] `receipt` - text describing the order (what might go on a receipt)
       - [ ] It should then send a JSON response back to the client with the new purchase like so: `{ "purchase": purchase }`. The response should have a `201` status code for a resource created action.
+
+---
+
+### Reflection
+
+* Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
+
+Throughout the beginning of the week, I struggled significantly in being able to understand React and the basic skills 
+associated with learning it. Fundamentally, the Twitter Clone Lab and Fast Food Feud Lab significantly prepared
+me in being able to complete not only the individual labs but learn enough React to complete the main features of this project. Learning how to filter and implement useState variables within Lab 1 allowed me to have the skills to apply these features within the project when searching for specific student store items. Additionally, understanding the significance of components and how they can be accessed throughout the entire App in Lab 2 prepared me for the vast array of components I would implemented in this lab and learning how to navigate both the components the React syntax necessary to access them. However, one of the features I felt unprepared to complete was the axios function used to access the API in this project and Browser Routes. While we were able to cover these topics throughout the lessons, the actual application of these concepts proved harder especially because we hadn't explored or applied these concepts before starting the project.
+
+* If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
+
+If I had more time, I would have changed not only the visual aesthetic of the App but also the functionally of the App as a whole. Visually, I would have liked to spend more time on the CSS in order to create a more personalized student store rather than trying to replicate the UI of the student store from the portal and I would have added more features that allow the user to navigate throughout the store using a sticky navigation bar. Functionally, I would have liked to implement the shopping cart feature to allow users to see the products they are pressing in the side toggle, including prices, quantity, etc. Additionally, I would have made more functional product cards that allowed the user to add the quantity of that product from the main page and view a more detailed description of the product than the one provided.
+
+* Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+
+Overall, the presentation of the basic functional components of the project went well in terms of having a more visually designed project than the previous demo. Prior to the demo on Friday, I had only the product cards and a blank screen showing but, by the demo day, I had improved my understanding of React and CSS more to the point that I was able to present a functional app that completed most of the core features. One thing that didn't go as planned was the fact that my search bar stopped working after I was able to make the category buttons functional. After the demo, I had to spend a lot of time debugging and trying to figure out why the search bar was not functioning as it should and had to read some documentation to figure out how to filter through the products properly. Something that some of my peers did was implement the shopping cart and side toggle features so that the project would responsively move to the side when this area was opened which is a feature I would have liked to implement as well if given the chance.
+
+### Open-source libraries used
+
+- Icons8 (Used for finding all icons used on student store) : https://icons8.com/
+
+### Shout out
+
+Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+I want to give a shoutout to all the TAs who helped answer my never ending questions about React and thank them for all the patience they had in resolving what was usually syntax errors through my labs and project. Additionally, I want to give a shoutout to all the podmates I had this week and thank them for the help and support they were able to give in such a stressful, time-sensitive week. Specifically, I want to thank Aligary, Amaar, and Mariam who were a significant help in being able to complete the core features of this project.

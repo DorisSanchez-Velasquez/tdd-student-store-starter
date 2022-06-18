@@ -11,9 +11,15 @@ export default function Home(props) {
   return (
     <div className="home" id="home">
       <Hero />
-      <Search searchItems={props.searchItems} searchCategories={props.searchCategories}/>
+
+      <Search searchItems={props.searchItems}/>
+
       <h1 id="buy">Best Selling Products</h1>
-      <ProductGrid products = {props.products} filteredProducts={props.filteredProducts} handleAddItemToCart={props.handleAddItemToCart} handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
+
+      <ProductGrid products = {props.products}
+                   filteredProducts={props.filteredProducts}
+                   handleAddItemToCart={props.handleAddItemToCart} 
+                   handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
     </div>
   )
 }

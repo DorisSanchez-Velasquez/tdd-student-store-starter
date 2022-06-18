@@ -21,6 +21,7 @@ export default function App() {
   const [shoppingCart, setShoppingCart] = useState([]);
   const [checkoutForm, setCheckoutForm] = useState(0);
   const [searchInput, setSearchInput] = useState("");
+  const [isCategory, setIsCategory] = useState(false)
 
   //OBJECTS AND VARIABLES
   let filteredProducts = [];
@@ -28,51 +29,33 @@ export default function App() {
     itemId: 0,
     quantity: 0
   }
-  
 
-  let searchItems = (searchValue) =>
+  //SEARCH INPUT FUNCTIONS (FILTER BY PRODUCT NAME)
+  let searchItems = (searchValue, isCategory) =>
   {
       setSearchInput(searchValue)
-      filterSearch(searchValue)
+      setIsCategory(isCategory)
   }
 
-  //SEARCH INPUT FUNCTIONS
-  function filterSearch(searchInput)
+  function filterSearch(searchInput, isCategory)
   {
-    filteredProducts=[];
-    console.log("This is search input: " + searchInput);
-    console.log("Entering filter:")
     filteredProducts = products.filter((product) =>
-       {return product.name.includes(searchInput)}
-    )
-    console.log(filteredProducts);
+    {
+      if(isCategory === false)
+      {
+        return product.name.toLowerCase().includes(searchInput.toLowerCase())
+      }
+      else
+      {
+        return product.category.includes(searchInput)
+      }
+    })
   }
 
-  filterSearch(searchInput)
+  filterSearch(searchInput, isCategory)
 
   
-
-  let searchCategories = (searchValue) =>
-  {
-      setSearchInput(searchValue)
-      filterSearchCategories(searchValue)
-  }
-
-
-  function filterSearchCategories(searchInput)
-  {
-    filteredProducts = [];
-    console.log("This is search input: " + searchInput);
-    console.log("Entering filter:")
-    filteredProducts = products.filter((product) =>
-       {return product.category.includes(searchInput)}
-    )
-  }
-
-   filterSearchCategories(searchInput)
-
   //HANDLER FUNCTIONS
-
   function handleOnToggle(evt)
   {
     evt.preventDefault();
@@ -133,10 +116,21 @@ export default function App() {
         <main>
           {/* YOUR CODE HERE! */}
           <Navbar />
-          <Sidebar isOpen={isOpen} shoppingCart={shoppingCart} products={products} checkoutForm={checkoutForm} handleOnCheckoutFormChange={handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} handleonToggle={handleOnToggle} />
+          <Sidebar isOpen={isOpen} 
+                   shoppingCart={shoppingCart} 
+                   products={products} 
+                   checkoutForm={checkoutForm} 
+                   handleOnCheckoutFormChange={handleOnCheckoutFormChange} 
+                   handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} 
+                   handleonToggle={handleOnToggle} />
 
           <Routes>
-            <Route path="/" element={<Home products= {products} filteredProducts={filteredProducts} handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart} searchItems={searchItems} searchCategories={searchCategories}/>}></Route>
+            <Route path="/" element={<Home products= {products} 
+                                           filteredProducts={filteredProducts}
+                                           handleAddItemToCart={handleAddItemToCart} 
+                                           handleRemoveItemFromCart={handleRemoveItemFromCart} 
+                                           searchItems={searchItems}/>}></Route>
+
             <Route path="/products/:productId" element={<ProductDetail />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
