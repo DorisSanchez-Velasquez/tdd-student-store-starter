@@ -6,6 +6,7 @@ import ProductDetail from "../ProductDetail/ProductDetail"
 import NotFound from "../NotFound/NotFound"
 import Footer from "../Footer/Footer"
 import About from "../About/About"
+import Contact from "../Contact/Contact"
 import {useState, useEffect} from "react"
 import axios from "axios"
 import "./App.css"
@@ -136,6 +137,8 @@ export default function App() {
           </Routes>
 
           <About />
+
+          <Contact />
 
           <Footer />
           

@@ -1,0 +1,24 @@
+.contact
+{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #2c4047;
+    margin-bottom: 50px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-text
+{
+    color: #FFFFFF;
+    padding: 50px;
+    font-weight: bold;
+}
+
+#contact-img
+{
+    justify-content: center;
+    margin: auto;
+    width: 300px
+}
