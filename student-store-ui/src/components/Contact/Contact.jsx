@@ -4,7 +4,7 @@ import "../Contact/Contact.css"
 export default function Contact(props) 
 {
     return(
-        <div>
+        <div id="contact">
             <h1>Contact Us</h1>
             <div className="contact">
                 <div className="contact-text">

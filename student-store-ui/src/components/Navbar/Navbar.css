@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-h3, .logo 
+a, .logo 
 {
     justify-content: center;
     display:inline-block;
@@ -29,11 +29,36 @@ h3, .logo
     vertical-align: center;
 }
 
-h3
+a
 {
     margin-right: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c4047;
+}
 
+li
+{
+    float: left;
+}
 
+li a
+{
+    display: block;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+}
 
+li:hover
+{
+    background-color: #314147;
+}

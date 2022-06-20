@@ -5,14 +5,15 @@ import Logo from "../Navbar/Logo"
 export default function Navbar() {
   return (
     <nav className="navbar">
-      {/* <p>Navbar</p> */}
       <Logo />
 
       <div className="all-nav-buttons">
-        <h3 href="#home">Home</h3>
-        <h3 href="#about">About Us</h3>
-        <h3 href="#contact">Contact Us</h3>
-        <h3 href="#buy">Buy Now</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#buy">Buy Now</a></li>
+        </ul>
       </div>
 
     </nav>

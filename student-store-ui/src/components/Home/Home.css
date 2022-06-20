@@ -32,19 +32,19 @@
 
 .product-card
 {
-  width: 100%;
+  width: 250px;
   margin-top:1em;
   margin-bottom: 1em;
   background-color: #ffffff;
 }
 
-.product-card:hover{
+/* .product-card:hover{
   transform: scale(1.2);
   border: 3px solid #00c385
-}
+} */
 
 #card-image
 {
-  width: 275px;
-  height: 275px
+  width: 250px;
+  height: 250px
 }

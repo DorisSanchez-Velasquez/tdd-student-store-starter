@@ -13,7 +13,7 @@ export default function ProductDetail() {
   //AXIOS REQUEST TO DISPLAY PRODUCT DETAILS
   async function getProductDetails()
   {
-    let response = await axios.get("/store/" + productId)
+    let response = await axios.get("https://codepath-store-api.herokuapp.com/store/" + productId)
     .then((response) =>
       {setProduct(response.data.product)}
     )

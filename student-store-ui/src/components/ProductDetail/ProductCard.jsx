@@ -10,6 +10,7 @@ export default function ProductCard(props) {
         </div>
         <h2 className="product-name">{props.product.name}</h2>
         <p className="product-price">${props.product.price}</p>
+        {props.showDescription ? <p className="product-description">{props.product.description}</p> : null}
     </div>
   )
 }
