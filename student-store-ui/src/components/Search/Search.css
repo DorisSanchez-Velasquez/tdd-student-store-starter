@@ -17,3 +17,8 @@
     border-radius: 5px;
     font-weight: bold;
 }
+
+#search-form
+{
+    padding: 10px;
+}

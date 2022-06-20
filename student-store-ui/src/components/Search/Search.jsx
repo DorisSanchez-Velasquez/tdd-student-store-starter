@@ -6,7 +6,7 @@ export default function Search(props) {
     <div className="search">
         <div>
           <form>
-              <input type="text" placeholder="Search for product . . ." onChange={(evt) => props.searchItems(evt.target.value, false)} required/>
+              <input type="text" id="search-form" placeholder="Search for product . . ." onChange={(evt) => props.searchItems(evt.target.value, false)} required/>
               <button className="cat-button">SEARCH</button>
           </form>
         </div>
