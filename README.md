@@ -7,16 +7,21 @@ Selling merchandise in the modern era requires digital solutions. For this proje
 GENERAL WEBSITE INTERFACE
 ![](http://g.recordit.co/pnXH23OlFE.gif)
 
+
 SEARCH FEATURE
 ![](http://g.recordit.co/pa8aex8J5N.gif)
 ![](http://g.recordit.co/TnAMyRjjEo.gif)
+
 
 CLICKING ON PRODUCT CARD FOR MORE DETAILS
 ![](http://g.recordit.co/675HNvctLx.gif)
 ![](http://g.recordit.co/Ckyj7Pn3l7.gif)
 
+
 SIDEBAR
 ![](http://g.recordit.co/xXq4QIpVss.gif)
+![](http://g.recordit.co/D377fAJq3I.gif)
+
 
 SINGLE PAGE NAVIGATION
 ![](http://g.recordit.co/A935QJNcez.gif)
