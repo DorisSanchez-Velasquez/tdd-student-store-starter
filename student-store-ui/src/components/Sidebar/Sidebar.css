@@ -1,7 +1,6 @@
 .sidebar
 {
     height: 100%;
-    width: 45px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -9,6 +8,32 @@
     background-color: #2c4047;
     overflow-x: hidden;
     padding-top: 20px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-form
+{
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#checkout-header
+{
+    float: center;
+}
+
+#sidebar-closed
+{
+    width: 45px;
+}
+
+#sidebar-open
+{
+    width: 375px;
 }
 
 .toggle-button
@@ -18,7 +43,52 @@
     border: none;
 }
 
+.toggle-button-close
+{
+    display: block;
+    background-color: #2c4047;
+    border: none;
+    float: right;
+    transform: rotate(180deg)
+}
+
 #toggle-image
 {
-    width: 25px;
+    width: 35px;
+}
+
+.shopping-cart
+{
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.shopping-cart th
+{
+    border: 1px solid #FFFFFF;
+    padding: 8px;
+}
+
+.shopping-cart td
+{
+    border: 1px solid #000000;
+    padding: 8px
+} 
+
+#cart-product
+{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.checkout-button
+{
+    margin-left: 10px;
+    background-color: #00c385;
+    color: #FFFFFF;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px
 }

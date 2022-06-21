@@ -11,7 +11,9 @@ export default function ProductGrid(props) {
                     return <ProductCard key = {product.id} 
                                         showDescription={false} 
                                         product={product}
-                                        productId = {product.id}/>;
+                                        productId = {product.id}
+                                        handleAddItemToCart = {props.handleAddItemToCart}
+                                        shoppingCart = {props.shoppingCart}/>;
                 })}
             </div>
         )
@@ -23,7 +25,9 @@ export default function ProductGrid(props) {
                 return <ProductCard key = {product.id} 
                                     showDescription={false} 
                                     product={product}
-                                    productId = {product.id}/>;
+                                    productId = {product.id}
+                                    handleAddItemToCart = {props.handleAddItemToCart}
+                                    shoppingCart = {props.shoppingCart}/>;
             })}
         </div>
     )}

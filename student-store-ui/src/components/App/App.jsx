@@ -22,10 +22,11 @@ export default function App() {
   const [shoppingCart, setShoppingCart] = useState([]);
   const [checkoutForm, setCheckoutForm] = useState(0);
   const [searchInput, setSearchInput] = useState("");
-  const [isCategory, setIsCategory] = useState(false)
+  const [isCategory, setIsCategory] = useState(false);
 
   //OBJECTS AND VARIABLES
   let filteredProducts = [];
+  let productExist = false;
   let shoppingCartItem = {
     itemId: 0,
     quantity: 0
@@ -55,25 +56,44 @@ export default function App() {
 
   filterSearch(searchInput, isCategory)
 
+
   
   //HANDLER FUNCTIONS
-  function handleOnToggle(evt)
+  function handleOnToggle()
   {
-    evt.preventDefault();
-      if({isOpen} === true)
+      if(isOpen === false)
       {
-        setIsOpen(false)
+        console.log("button closed, open it")
+        setIsOpen(true)
       }
       else
       {
-        setIsOpen(true)
+        console.log("button open, close it")
+        setIsOpen(false)
       }
   }
 
 
   function handleAddItemToCart(productId)
   {
-    //whoop
+    productExist = false;
+    shoppingCart.map((element) => {
+        if(element.itemId === productId)
+        {
+          productExist = true;
+          element.quantity++;
+        }
+        else{ 
+          productExist === false;
+        }
+      })
+    
+     if(productExist === false)
+     {
+       shoppingCartItem.itemId = productId;
+       shoppingCartItem.quantity = 1;
+       setShoppingCart((currentProducts) => [...currentProducts, {...shoppingCartItem}])
+     } 
   }
 
   function handleRemoveItemFromCart(productId)
@@ -118,23 +138,26 @@ export default function App() {
           {/* YOUR CODE HERE! */}
           <Navbar />
           <Sidebar isOpen={isOpen} 
+                   setIsOpen={setIsOpen}
                    shoppingCart={shoppingCart} 
                    products={products} 
                    checkoutForm={checkoutForm} 
                    handleOnCheckoutFormChange={handleOnCheckoutFormChange} 
                    handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} 
-                   handleonToggle={handleOnToggle} />
+                   handleOnToggle={handleOnToggle} />
 
           <Routes>
             <Route path="/" element={<Home products= {products} 
                                            filteredProducts={filteredProducts}
                                            handleAddItemToCart={handleAddItemToCart} 
                                            handleRemoveItemFromCart={handleRemoveItemFromCart} 
-                                           searchItems={searchItems}/>}></Route>
+                                           searchItems={searchItems}
+                                           shoppingCart={shoppingCart}/>}></Route>
 
             <Route path="/products/:productId" element={<ProductDetail handleAddItemToCart={handleAddItemToCart}
                                                                        handleRemoveItemFromCart={handleRemoveItemFromCart}
-                                                                       products={products}/>}></Route>
+                                                                       products={products}
+                                                                       shoppingCart={shoppingCart}/>}></Route>
 
             <Route path="*" element={<NotFound />}></Route>
           </Routes>

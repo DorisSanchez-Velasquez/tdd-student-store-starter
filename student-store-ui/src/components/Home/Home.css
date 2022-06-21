@@ -38,13 +38,19 @@
   background-color: #ffffff;
 }
 
-/* .product-card:hover{
-  transform: scale(1.2);
-  border: 3px solid #00c385
-} */
-
 #card-image
 {
   width: 250px;
   height: 250px
+}
+
+#star-rating
+{
+  width: 20px;
+  height: 20px
+}
+
+.add-remove-section
+{
+  display: inline-block;
 }

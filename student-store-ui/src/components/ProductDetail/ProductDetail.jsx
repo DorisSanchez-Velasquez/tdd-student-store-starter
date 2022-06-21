@@ -5,7 +5,7 @@ import axios from "axios"
 import ProductView from "../ProductDetail/ProductView"
 import Notfound from "../NotFound/Notfound"
 
-export default function ProductDetail() {
+export default function ProductDetail(props) {
   const [product, setProduct] = useState(null)
   const [productNotFound, setProductNotFound] = useState(false)
   const {productId} = useParams();
@@ -45,7 +45,9 @@ export default function ProductDetail() {
       return(
         <div className="product-detail">
           <ProductView product={product}
-                       productId={productId}/>
+                       productId={productId}
+                       shoppingCart={props.shoppingCart}
+                       handleAddItemToCart={props.handleAddItemToCart}/>
         </div>
       )
   }

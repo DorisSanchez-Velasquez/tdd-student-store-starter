@@ -8,7 +8,9 @@ export default function ProductView(props) {
         <ProductCard key = {props.productId} 
                      showDescription={true} 
                      product={props.product}
-                     productId = {props.productId}/>
+                     productId = {props.productId}
+                     shoppingCart={props.shoppingCart}
+                     handleAddItemToCart = {props.handleAddItemToCart}/>
     </div>
   )
 }

@@ -18,6 +18,7 @@ export default function Home(props) {
 
       <ProductGrid products = {props.products}
                    filteredProducts={props.filteredProducts}
+                   shoppingCart = {props.shoppingCart}
                    handleAddItemToCart={props.handleAddItemToCart} 
                    handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
     </div>
