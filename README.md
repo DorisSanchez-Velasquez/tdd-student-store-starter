@@ -10,9 +10,6 @@ GENERAL WEBSITE INTERFACE
 SEARCH FEATURE
 ![](http://g.recordit.co/pKjo17vsji.gif)
 
-PRODUCT CARDS AND ADDING QUANTITY
-![](http://g.recordit.co/ouEY1Imy0D.gif)
-
 CLICKING ON PRODUCT CARD FOR MORE DETAILS
 ![](http://g.recordit.co/5d65NSX7j3.gif)
 
@@ -20,7 +17,7 @@ SIDEBAR
 ![](http://g.recordit.co/xXq4QIpVss.gif)
 
 SINGLE PAGE NAVIGATION
-![](http://g.recordit.co/jRweJsY6AL.gif)
+![](http://g.recordit.co/S6Vnys8plJ.gif)
 
 
 
