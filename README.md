@@ -8,8 +8,8 @@ GENERAL WEBSITE INTERFACE
 ![](http://g.recordit.co/pnXH23OlFE.gif)
 
 SEARCH FEATURE
-![](http://g.recordit.co/OjxD8hJoQz.gif)
-![](http://g.recordit.co/7k51kWIu1W.gif)
+![](http://g.recordit.co/pa8aex8J5N.gif)
+![](http://g.recordit.co/TnAMyRjjEo.gif)
 
 CLICKING ON PRODUCT CARD FOR MORE DETAILS
 ![](http://g.recordit.co/6flvrKnIB4.gif)
