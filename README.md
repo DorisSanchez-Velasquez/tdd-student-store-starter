@@ -8,16 +8,18 @@ GENERAL WEBSITE INTERFACE
 ![](http://g.recordit.co/pnXH23OlFE.gif)
 
 SEARCH FEATURE
-![](http://g.recordit.co/8vqrR7tVtV.gif)
+![](http://g.recordit.co/iYbwH7wkUK.gif)
+![](http://g.recordit.co/7jq7mGWUdv.gif)
 
 PRODUCT CARDS AND ADDING QUANTITY
-![](http://g.recordit.co/wBAu8YEYVH.gif)
+![](http://g.recordit.co/ouEY1Imy0D.gif)
 
 CLICKING ON PRODUCT CARD FOR MORE DETAILS
-![](http://g.recordit.co/teB3BNwiIB.gif)
+![](http://g.recordit.co/97fxCYBduS.gif)
 
 SIDEBAR
-![](http://g.recordit.co/CqIxVGwrA0.gif)
+![](http://g.recordit.co/2LWtxoenSQ.gif)
+![](http://g.recordit.co/xXq4QIpVss.gif)
 
 SINGLE PAGE NAVIGATION
 ![](http://g.recordit.co/jRweJsY6AL.gif)
