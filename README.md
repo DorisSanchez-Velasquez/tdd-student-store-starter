@@ -19,7 +19,7 @@ SIDEBAR
 ![](http://g.recordit.co/xXq4QIpVss.gif)
 
 SINGLE PAGE NAVIGATION
-![](http://g.recordit.co/pWdi7lkAc2.gif)
+![](http://g.recordit.co/A935QJNcez.gif)
 
 
 
