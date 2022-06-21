@@ -71,7 +71,7 @@ export default function ShoppingCart(props)
                     <td>Subtotal</td>
                     <td></td>
                     <td></td>
-                    <td className="subtotal">${subtotal}</td>
+                    <td className="subtotal">${formatPrice(subtotal)}</td>
                 </tr>
                 <tr id="cart-product">
                     <td>Taxes and Fees</td>

@@ -5,7 +5,8 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #2c4047;
+    /* background-color: #2c4047; */
+    background-color: #000000;
     overflow-x: hidden;
     padding-top: 20px;
     color: #FFFFFF;
@@ -39,14 +40,16 @@
 .toggle-button
 {
     display: block;
-    background-color: #2c4047;
+    /* background-color: #2c4047; */
+    background-color: #000000;
     border: none;
 }
 
 .toggle-button-close
 {
     display: block;
-    background-color: #2c4047;
+    /* background-color: #2c4047; */
+    background-color: #000000;
     border: none;
     float: right;
     transform: rotate(180deg)
@@ -84,11 +87,13 @@
 .checkout-button
 {
     margin-left: 10px;
-    background-color: #00c385;
+    /* background-color: #00c385; */
+    background-color: #3406a1;
     color: #FFFFFF;
     border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 20px
 }

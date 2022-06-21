@@ -2,7 +2,8 @@
 {
     display:grid;
     grid-template-columns: repeat(2, auto);
-    background-color: #2c4047;
+    /* background-color: #2c4047; */
+    background-color: rgba(0, 0, 0, .7);
     margin-bottom: 50px;
     width: 85%;
     margin-left: auto;

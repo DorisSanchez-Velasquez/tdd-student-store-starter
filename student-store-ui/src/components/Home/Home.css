@@ -7,11 +7,18 @@
   flex-direction: column;
 }
 
+#welcome-banner
+{
+  background-color: rgba(0, 0, 0, .7);
+  padding: 10px;
+}
+
 .hero
 {
   background-color: #00c385;
+  background-image: url(https://paperbell.com/wp-content/uploads/2021/03/coach-business-card-feature1200x429.jpg);
   color: white;
-  width:85%;
+  width:100%;
   display:inline;
   padding: 50px;
   text-align: center;
@@ -32,16 +39,22 @@
 
 .product-card
 {
-  width: 250px;
+  width: 300px;
   margin-top:1em;
   margin-bottom: 1em;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, .7);
+  /* background-color: #ffffff; */
+}
+
+.product-info
+{
+  margin-left: 15px;
 }
 
 #card-image
 {
-  width: 250px;
-  height: 250px
+  width: 300px;
+  height: 300px
 }
 
 #star-rating
@@ -50,7 +63,28 @@
   height: 20px
 }
 
-.add-remove-section
+.add, .remove
 {
-  display: inline-block;
+  border: 1px solid #FFFFFF;
+  background-color: #3406a1;
+  color: #FFFFFF;
+  padding: 10px;
+  margin-right: 10px
 }
+
+#button-add, #button-remove
+{
+  width: 15px;
+}
+
+#quantity-tag
+{
+  background-color: #0a91ff;
+  float: center;
+  align-items: center;
+  border: solid 1px #FFFFFF;
+  color: #FFFFFF;
+  width: 15px;
+  font-weight: bold;
+}
+
