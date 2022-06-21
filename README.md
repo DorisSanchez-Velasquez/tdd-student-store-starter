@@ -12,7 +12,8 @@ SEARCH FEATURE
 ![](http://g.recordit.co/TnAMyRjjEo.gif)
 
 CLICKING ON PRODUCT CARD FOR MORE DETAILS
-![](http://g.recordit.co/6flvrKnIB4.gif)
+![](http://g.recordit.co/675HNvctLx.gif)
+![](http://g.recordit.co/Ckyj7Pn3l7.gif)
 
 SIDEBAR
 ![](http://g.recordit.co/xXq4QIpVss.gif)
