@@ -26,7 +26,9 @@ export default function Sidebar(props) {
                     shoppingCart={props.shoppingCart}
                     checkoutForm={props.checkoutForm}
                     handleOnCheckoutFormChange={props.handleOnCheckoutFormChange}
-                    handleOnSubmitCheckoutForm={props.handleOnSubmitCheckoutForm}/>
+                    handleOnSubmitCheckoutForm={props.handleOnSubmitCheckoutForm}
+                    error={props.error}
+                    submitSuccess = {props.submitSuccess}/>
     </section>
   )}
 }

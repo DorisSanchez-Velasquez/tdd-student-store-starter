@@ -4,12 +4,13 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #f5f5f5 */
-  background: linear-gradient(-45deg, #ee7752, #470e5e, #093444, #2caf91);
+   background-color: #13023b;
+   color: #FFFFFF;
+  /* background: linear-gradient(-45deg, #ee7752, #470e5e, #093444, #2caf91);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
-  color: #FFFFFF;
+  color: #FFFFFF; */
 }
 
 @keyframes gradient {

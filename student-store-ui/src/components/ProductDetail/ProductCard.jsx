@@ -3,28 +3,14 @@ import "../Home/Home.css"
 import {Link} from "react-router-dom"
 
 export default function ProductCard(props) {
+ let findElement = props.shoppingCart.find((item) => item.itemId === props.productId)
  function formatPrice(price)
  {
     return price.toFixed(2)
  }
 
-  let quantity;
-  function findQuantity()
-  {
-    if(props.shoppingCart.length > 0)
-    {
-     props.shoppingCart.map((element) => {
-       if(element.itemId === props.productId)
-       {
-         quantity = element.quantity;
-       }
-     })
-    }
-  }
-  findQuantity();
 
-
-
+  //console.log(props.product)
   return (
     <div className="product-card">
         <div className="media">
@@ -44,8 +30,8 @@ export default function ProductCard(props) {
             
             <div className="add-remove-section">
                 <button className="add" onClick={() => {props.handleAddItemToCart(props.productId)}}><img id="button-add" src="../src/plusSign.png"/></button>
-                <button className="remove"><img id="button-remove" src="../src/minusSign.png"/></button>
-                <p id="quantity-tag">{quantity}</p>
+                <button className="remove" onClick={() => {props.handleRemoveItemFromCart(props.productId)}}><img id="button-remove" src="../src/minusSign.png"/></button>
+                <p id="quantity-tag">{findElement != null ? (findElement.quantity) : ""}</p>
             </div>
         </div>
     </div>

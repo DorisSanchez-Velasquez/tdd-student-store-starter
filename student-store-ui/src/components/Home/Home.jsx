@@ -20,7 +20,8 @@ export default function Home(props) {
                    filteredProducts={props.filteredProducts}
                    shoppingCart = {props.shoppingCart}
                    handleAddItemToCart={props.handleAddItemToCart} 
-                   handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
+                   handleRemoveItemFromCart={props.handleRemoveItemFromCart}
+                   quantity={props.quantity}/>
     </div>
   )
 }
