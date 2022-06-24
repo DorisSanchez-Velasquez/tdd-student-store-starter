@@ -88,7 +88,7 @@ The following specifications were met on the Express backend and the React front
     - [x] `*` - anything else should render the `NotFound` component
   - [x] Renders the `Navbar` component on every route
   - [x] Renders the `Sidebar` component on every route
-  - [ ] Should create **at least** the following state variables:
+  - [x] Should create **at least** the following state variables:
     - [x] `products` - an array of product objects that is initially empty.
     - [x] `isFetching` - a boolean value representing whether or not the App is currently fetching the `products` from the API.
     - [x] `error` - a variable used to display a message when something goes wrong with the API requests.
@@ -192,7 +192,7 @@ The following specifications were met on the Express backend and the React front
 **ProductView.jsx**
 
   - [x] Should render JSX that is wrapped by a `div` element with a `className` of `product-view`
-  - [ ] Should accept **at least** the following props:
+  - [x] Should accept **at least** the following props:
     - `product` - the `product` object returned by the API request
     - `productId` - the id of the product extracted from the url
     - `quantity` - the quantity for this product found in the `shoppingCart`
@@ -204,7 +204,7 @@ The following specifications were met on the Express backend and the React front
 **ProductCard.jsx**
 
   - [x] Should render JSX that is wrapped by a `div` element with a `className` of `product-card`
-  - [ ] Should accept **at least** the following props:
+  - [x] Should accept **at least** the following props:
     - `product` - a product object
     - `productId` - a `number` representing the `id` of the product
     - `quantity` - the quantity for this product found in the `shoppingCart`
