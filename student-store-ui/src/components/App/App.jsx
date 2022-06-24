@@ -20,9 +20,11 @@ export default function App() {
   const [error, setError] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [shoppingCart, setShoppingCart] = useState([]);
-  const [checkoutForm, setCheckoutForm] = useState(0);
+  const [checkoutForm, setCheckoutForm] = useState({name: "", email:""});
   const [searchInput, setSearchInput] = useState("");
   const [isCategory, setIsCategory] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(0)
+  const [receipt, setReceipt] = useState([])
 
   //OBJECTS AND VARIABLES
   let filteredProducts = [];
@@ -77,45 +79,79 @@ export default function App() {
   function handleAddItemToCart(productId)
   {
     productExist = false;
-    shoppingCart.map((element) => {
+    if(shoppingCart.length > 0)
+    {shoppingCart.map((element, index) => {
         if(element.itemId === productId)
         {
-          productExist = true;
-          element.quantity++;
+            element.quantity += 1
+            setShoppingCart((shoppingCart) => [...shoppingCart])
+            productExist = true
         }
-        else{ 
-          productExist === false;
-        }
-      })
+      })}
     
      if(productExist === false)
      {
        shoppingCartItem.itemId = productId;
        shoppingCartItem.quantity = 1;
        setShoppingCart((currentProducts) => [...currentProducts, {...shoppingCartItem}])
-     } 
+     }
   }
 
   function handleRemoveItemFromCart(productId)
   {
-    //whoop
+     shoppingCart.map((element) => {
+       if(element.itemId === productId)
+       {
+
+           element.quantity -= 1
+           setShoppingCart((shoppingCart) => [...shoppingCart])
+           if(element.quantity === 0)
+           {
+               setShoppingCart(shoppingCart.filter((item) => {
+                 return item.itemId != productId
+               }))
+           }
+           console.log(shoppingCart)
+       }
+     })
   }
 
   function handleOnCheckoutFormChange(name, value)
   {
-    //whoop
+    if(name === "name")
+    {
+      setCheckoutForm({name: value, email: checkoutForm.email})
+    }
+    if(name === "email")
+    {
+      setCheckoutForm({name: checkoutForm.name, email: value})
+    }
+    console.log(checkoutForm)
   }
 
   function handleOnSubmitCheckoutForm()
-  {
-    //whoop
+  {  
+    axios.post(`http://localhost:3001/store`, {user: checkoutForm, shoppingCart: shoppingCart})
+    .then((res) => {
+      console.log(res)
+      console.log("Successful")
+      setSubmitSuccess(true)
+      setReceipt(res.data.purchase.receipt)
+      setCheckoutForm({name: "", email: ""})
+      setShoppingCart([])
+    })
+    .catch((error) => {
+      console.log("Whoops error: ")
+      setError(error)
+      setSubmitSuccess (false)
+    })
   }
 
   //AXIOS COMMAND TO GET PRODUCTS DISPLAY
    async function getProducts()
    {
      setIsFetching(true)
-     const response = await axios.get('https://codepath-store-api.herokuapp.com/store')
+      const response= await axios.get('http://localhost:3001/store')
      .then(function (response) {
         console.log(response.data)
         setProducts(response.data.products)
@@ -139,12 +175,15 @@ export default function App() {
           <Navbar />
           <Sidebar isOpen={isOpen} 
                    setIsOpen={setIsOpen}
+                   error = {error}
+                   submitSuccess = {submitSuccess}
                    shoppingCart={shoppingCart} 
                    products={products} 
                    checkoutForm={checkoutForm} 
                    handleOnCheckoutFormChange={handleOnCheckoutFormChange} 
                    handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} 
-                   handleOnToggle={handleOnToggle} />
+                   handleOnToggle={handleOnToggle}
+                   receipt = {receipt} />
 
           <Routes>
             <Route path="/" element={<Home products= {products} 

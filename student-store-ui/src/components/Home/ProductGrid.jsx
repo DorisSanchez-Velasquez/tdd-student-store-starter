@@ -13,6 +13,7 @@ export default function ProductGrid(props) {
                                         product={product}
                                         productId = {product.id}
                                         handleAddItemToCart = {props.handleAddItemToCart}
+                                        handleRemoveItemFromCart = {props.handleRemoveItemFromCart}
                                         shoppingCart = {props.shoppingCart}/>;
                 })}
             </div>
@@ -27,6 +28,7 @@ export default function ProductGrid(props) {
                                     product={product}
                                     productId = {product.id}
                                     handleAddItemToCart = {props.handleAddItemToCart}
+                                    handleRemoveItemFromCart = {props.handleRemoveItemFromCart}
                                     shoppingCart = {props.shoppingCart}/>;
             })}
         </div>

@@ -46,6 +46,12 @@
   /* background-color: #ffffff; */
 }
 
+#card-image:hover
+{
+    filter: brightness(70%);
+    border: solid 2px #FFFFFF
+}
+
 .product-info
 {
   margin-left: 15px;

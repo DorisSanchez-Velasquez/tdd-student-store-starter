@@ -145,5 +145,758 @@
       "price": 999.99
     }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "id": 0,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 10,
+          "quantity": 10
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:03:30.813Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:03:30.813Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 10,
+          "quantity": 10
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:03:35.855Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:03:35.855Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 10,
+          "quantity": 10
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:11:51.371Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:11:51.371Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 10,
+          "quantity": 10
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:14:15.447Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:14:15.447Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 10,
+          "quantity": 10
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:31:34.788Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:31:34.788Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 5,
+          "quantity": 3
+        },
+        {
+          "itemId": 10,
+          "quantity": 10
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:32:09.509Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:32:09.509Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 5,
+          "quantity": 3
+        },
+        {
+          "itemId": 10,
+          "quantity": 10
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T18:35:37.772Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T18:35:37.772Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "checkoutForm.name",
+      "email": "checkoutForm@email",
+      "order": [
+        {
+          "itemId": 10,
+          "quantity": 1
+        },
+        {
+          "itemId": 11,
+          "quantity": 2
+        }
+      ],
+      "total": "473.05",
+      "createdAt": "2022-06-24T18:38:35.662Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: checkoutForm.name",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T18:38:35.662Z",
+        "[object Object],[object Object]",
+        "Total: 473.05",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": "4.88",
+      "createdAt": "2022-06-24T18:40:53.462Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T18:40:53.462Z",
+        "[object Object],[object Object]",
+        "Total: 4.88",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": "6.51",
+      "createdAt": "2022-06-24T18:42:00.993Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T18:42:00.993Z",
+        "[object Object],[object Object]",
+        "Total: 6.51",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        {
+          "itemId": 14,
+          "quantity": 1
+        },
+        {
+          "itemId": 15,
+          "quantity": 2
+        }
+      ],
+      "total": "163.08",
+      "createdAt": "2022-06-24T18:43:57.655Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T18:43:57.655Z",
+        "[object Object],[object Object]",
+        "Total: 163.08",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "backend-dev",
+      "email": "checkoutForm.email",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": "6.51",
+      "createdAt": "2022-06-24T18:51:59.679Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm.email",
+        "Time: 2022-06-24T18:51:59.679Z",
+        "[object Object],[object Object]",
+        "Total: 6.51",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "",
+      "email": "",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 1
+        },
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "6.79",
+      "createdAt": "2022-06-24T18:52:42.008Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: ",
+        "Shopper's Email: ",
+        "Time: 2022-06-24T18:52:42.008Z",
+        "[object Object],[object Object]",
+        "Total: 6.79",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 2
+        }
+      ],
+      "total": "8.13",
+      "createdAt": "2022-06-24T18:54:14.414Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T18:54:14.414Z",
+        "[object Object],[object Object]",
+        "Total: 8.13",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "checkoutForm.name",
+      "email": "checkoutForm@email",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 2
+        }
+      ],
+      "total": "8.13",
+      "createdAt": "2022-06-24T18:57:05.403Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: checkoutForm.name",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T18:57:05.403Z",
+        "[object Object],[object Object]",
+        "Total: 8.13",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        "0",
+        "1"
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T19:03:24.224Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T19:03:24.224Z",
+        "0,1",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        {
+          "itemId": 5,
+          "quantity": 3
+        },
+        {
+          "itemId": 10,
+          "quantity": 10
+        }
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T19:06:54.959Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T19:06:54.959Z",
+        "[object Object],[object Object]",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        [
+          "Fruit Medley",
+          3
+        ],
+        [
+          "Alpaca Wool Scarf",
+          10
+        ]
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T19:10:34.829Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T19:10:34.829Z",
+        "Fruit Medley,3,Alpaca Wool Scarf,10",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        [
+          "Bar Code Shirts",
+          1
+        ],
+        [
+          "Striped Socks",
+          2
+        ]
+      ],
+      "total": "32.59",
+      "createdAt": "2022-06-24T19:11:00.942Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T19:11:00.942Z",
+        "Bar Code Shirts,1,Striped Socks,2",
+        "Total: 32.59",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "",
+      "email": "",
+      "order": [],
+      "total": "0.00",
+      "createdAt": "2022-06-24T19:11:30.754Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: ",
+        "Shopper's Email: ",
+        "Time: 2022-06-24T19:11:30.754Z",
+        "Your order: ",
+        "Total: 0.00",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "",
+      "email": "",
+      "order": [
+        [
+          "Mouse from 1998",
+          1
+        ],
+        [
+          "Smart Glasses",
+          2
+        ]
+      ],
+      "total": "2196.71",
+      "createdAt": "2022-06-24T19:11:41.253Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: ",
+        "Shopper's Email: ",
+        "Time: 2022-06-24T19:11:41.253Z",
+        "Your order: Mouse from 1998,1,Smart Glasses,2",
+        "Total: 2196.71",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Doris Sanchez Velasquez",
+      "email": "checkoutForm@email",
+      "order": [
+        [
+          "Mouse from 1998",
+          1
+        ],
+        [
+          "Smart Glasses",
+          2
+        ]
+      ],
+      "total": "2196.71",
+      "createdAt": "2022-06-24T19:12:14.388Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: Doris Sanchez Velasquez",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T19:12:14.388Z",
+        "Your order: Mouse from 1998,1,Smart Glasses,2",
+        "Total: 2196.71",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        [
+          "Cinnamon Rolls",
+          2
+        ],
+        [
+          "Coconut Water",
+          1
+        ]
+      ],
+      "total": "10.04",
+      "createdAt": "2022-06-24T19:17:57.537Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T19:17:57.537Z",
+        "Your order: Cinnamon Rolls,2,Coconut Water,1",
+        "Total: 10.04",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "",
+      "email": "",
+      "order": [
+        [
+          "Striped Socks",
+          2
+        ],
+        [
+          "Knitted Beanie",
+          1
+        ]
+      ],
+      "total": "32.59",
+      "createdAt": "2022-06-24T19:18:09.938Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: ",
+        "Shopper's Email: ",
+        "Time: 2022-06-24T19:18:09.938Z",
+        "Your order: Striped Socks,2,Knitted Beanie,1",
+        "Total: 32.59",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        [
+          "Flamin Hot Cheetos",
+          1
+        ],
+        [
+          "Cinnamon Rolls",
+          2
+        ]
+      ],
+      "total": "8.13",
+      "createdAt": "2022-06-24T20:50:42.357Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T20:50:42.357Z",
+        "Your order: Flamin Hot Cheetos,1,Cinnamon Rolls,2",
+        "Total: 8.13",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "asdasdasdasd",
+      "email": "asdasdasd@hotmail.com",
+      "order": [
+        "You bought 3 of the Fruit Medley",
+        "You bought 10 of the Alpaca Wool Scarf"
+      ],
+      "total": "404.99",
+      "createdAt": "2022-06-24T21:52:28.348Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: asdasdasdasd",
+        "Shopper's Email: asdasdasd@hotmail.com",
+        "Time: 2022-06-24T21:52:28.348Z",
+        "Your order: You bought 3 of the Fruit Medley,You bought 10 of the Alpaca Wool Scarf",
+        "Total: 404.99",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        "You bought 1 of the Flamin Hot Cheetos",
+        "You bought 2 of the Cinnamon Rolls"
+      ],
+      "total": "8.13",
+      "createdAt": "2022-06-24T21:53:56.730Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T21:53:56.730Z",
+        "Your order: You bought 1 of the Flamin Hot Cheetos,You bought 2 of the Cinnamon Rolls",
+        "Total: 8.13",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        "You bought 1 of the Flamin Hot Cheetos",
+        "You bought 2 of the Cinnamon Rolls"
+      ],
+      "total": "8.13",
+      "createdAt": "2022-06-24T21:55:05.344Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T21:55:05.344Z",
+        "Your order: You bought 1 of the Flamin Hot Cheetos,You bought 2 of the Cinnamon Rolls",
+        "Total: $ 8.13",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "",
+      "email": "",
+      "order": [
+        "You bought 1 of the Flamin Hot Cheetos",
+        "You bought 2 of the Cinnamon Rolls"
+      ],
+      "total": "8.13",
+      "createdAt": "2022-06-24T22:00:03.401Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: ",
+        "Shopper's Email: ",
+        "Time: 2022-06-24T22:00:03.401Z",
+        "Your order: You bought 1 of the Flamin Hot Cheetos,You bought 2 of the Cinnamon Rolls",
+        "Total: $ 8.13",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "",
+      "email": "",
+      "order": [],
+      "total": "0.00",
+      "createdAt": "2022-06-24T22:00:22.546Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: ",
+        "Shopper's Email: ",
+        "Time: 2022-06-24T22:00:22.546Z",
+        "Your order: ",
+        "Total: $ 0.00",
+        "Thank You for Shopping!"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        "You bought 3 of the Cinnamon Rolls",
+        "You bought 1 of the Coconut Water"
+      ],
+      "total": "13.29",
+      "createdAt": "2022-06-24T22:38:39.728Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T22:38:39.728Z",
+        "Your order: You bought 3 of the Cinnamon Rolls,You bought 1 of the Coconut Water",
+        "Total: $ 13.29",
+        "Thank You for Shopping!"
+      ]
+    }
+  ]
 }

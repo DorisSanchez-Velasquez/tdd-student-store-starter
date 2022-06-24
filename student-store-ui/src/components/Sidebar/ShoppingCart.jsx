@@ -3,7 +3,6 @@ import "./Sidebar.css"
 
 export default function ShoppingCart(props) 
 {
-    console.log(props.products);
     let name;
     let price = 0;
     let cost;

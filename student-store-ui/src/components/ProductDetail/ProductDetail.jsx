@@ -13,7 +13,7 @@ export default function ProductDetail(props) {
   //AXIOS REQUEST TO DISPLAY PRODUCT DETAILS
   async function getProductDetails()
   {
-    let response = await axios.get("https://codepath-store-api.herokuapp.com/store/" + productId)
+    let response = await axios.get("http://localhost:3001/store/" + productId)
     .then((response) =>
       {setProduct(response.data.product)}
     )
@@ -47,7 +47,8 @@ export default function ProductDetail(props) {
           <ProductView product={product}
                        productId={productId}
                        shoppingCart={props.shoppingCart}
-                       handleAddItemToCart={props.handleAddItemToCart}/>
+                       handleAddItemToCart={props.handleAddItemToCart}
+                       handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
         </div>
       )
   }
