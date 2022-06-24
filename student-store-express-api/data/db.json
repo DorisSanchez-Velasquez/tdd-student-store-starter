@@ -877,6 +877,26 @@
         "Total: $ 0.00",
         "Thank You for Shopping!"
       ]
+    },
+    {
+      "id": 31,
+      "name": "backend-dev",
+      "email": "checkoutForm@email",
+      "order": [
+        "You bought 3 of the Cinnamon Rolls",
+        "You bought 1 of the Coconut Water"
+      ],
+      "total": "13.29",
+      "createdAt": "2022-06-24T22:38:39.728Z",
+      "receipt": [
+        "Receipt Of Sale",
+        "Shopper's Name: backend-dev",
+        "Shopper's Email: checkoutForm@email",
+        "Time: 2022-06-24T22:38:39.728Z",
+        "Your order: You bought 3 of the Cinnamon Rolls,You bought 1 of the Coconut Water",
+        "Total: $ 13.29",
+        "Thank You for Shopping!"
+      ]
     }
   ]
 }

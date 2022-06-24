@@ -4,6 +4,7 @@
 
 Selling merchandise in the modern era requires digital solutions. For this project, you'll be tasked with designing and constructing an online student store for the College of Codepath. The application entails a frontend user interface for potential customers to peruse the goods, and a backend API to handle data management. The API will be built with Node and Express and the UI will be built with React.
 
+### FRONT END DEVELOPMENT GIFS (WEEK 2)
 GENERAL WEBSITE INTERFACE
 ![](http://g.recordit.co/pnXH23OlFE.gif)
 
@@ -28,8 +29,25 @@ SINGLE PAGE NAVIGATION
 
 
 
-UPDATE: BACKEND WEEK 3 GIFS
+### BACKEND DEVELOPMENT GIFS (WEEK 3)
+GENERAL UI POWERED BY BACKEND
+![](http://g.recordit.co/Pd4W5C76c5.gif)
 
+
+SHOPPING CART ADD QUANTITY
+![](http://g.recordit.co/9Xb8p3tA64.gif)
+
+
+SHOPPING CART REMOVE QUANTITY
+![](http://g.recordit.co/iodInQbc7Y.gif)
+
+
+PRODUCT DETAIL POWERED BY BACKEND
+![](http://g.recordit.co/Okf8OVH9pb.gif)
+
+
+CHECKOUT FORM
+![](http://g.recordit.co/krs80HANq0.gif)
 
 
 ### Application Features
@@ -265,7 +283,7 @@ The following specifications were met on the Express backend and the React front
       - [x] If the `POST` request is successful...
         - [x] The `CheckoutForm` component should display a success message that contains the text `"Success!"` inside an element with the `className` of `success`.
         - [x] The `shoppingCart` should be emptied
-        - [ ] The `checkoutForm` should be reset to its default state.
+        - [x] The `checkoutForm` should be reset to its default state.
 
 **Server** - Create an Express server
   - [x] Wire up the appropriate middleware and error handlers in the `app.js` file
@@ -275,7 +293,7 @@ The following specifications were met on the Express backend and the React front
 **Models** - The API should use a `Store` model that handles the following
   - [x] List all products currently in the `db.json` file
   - [x] Fetch a single product by its id
-  - [ ] Create a purchase order
+  - [x] Create a purchase order
 
 **Routes** - The API should contain a route mounted at the `/store` endpoint
   - [x] It should respond to `GET` requests to `/store` with an array of all products in the store in this format: `{ "products": products }`
