@@ -28,6 +28,10 @@ SINGLE PAGE NAVIGATION
 
 
 
+UPDATE: BACKEND WEEK 3 GIFS
+
+
+
 ### Application Features
 
 #### Core Features
@@ -39,15 +43,15 @@ SINGLE PAGE NAVIGATION
 - [x] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
 - [x] User can click to expand the shopping cart in the left navigation.
 - [x] User can click the '+' button on a product cart to increment that product in the shopping cart.
-- [ ] User can click the '-' button on a product cart to increment that product in the shopping cart.
-- [ ] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
+- [X] User can click the '-' button on a product cart to increment that product in the shopping cart.
+- [X] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
 - [ ] User can check out, and can view receipt upon completion.
 
 #### Stretch Features
 
 - [x] User can click in the top navigation bar to scroll to the relevant section.
 - [x] User sees a "not found" display when searching for a nonexistent product.
-- [ ] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
+- [X] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
 - [ ] Build a page in the UI that displays the list of all past orders and lets the user click on any individual order to take them to a more detailed page of the transaction.
 - [ ] Allow users to use an input to filter orders by the email of the person who placed the order.
 
@@ -93,16 +97,16 @@ The following specifications were met on the Express backend and the React front
         - [x] It should add that product to the `shoppingCart` if it doesn't exist, and set its quantity to `1`.
         - [x] If it does exist, it should increase the quantity by `1`.
         - [x] It should add the price of the product to the total price of the `shoppingCart`.
-      - [ ] The **`handleRemoveItemFromCart`** function. When called...
-        - [ ] It should accept a single argument - `productId`
-        - [ ] It should decrease the quantity of the item in the `shoppingCart` by `1`, but only if it already exists.
-        - [ ] If it doesn't exist, the function should do nothing.
-        - [ ] If the new quantity is `0`, it should remove the item from the `shoppingCart`
-      - [ ] The **`handleOnCheckoutFormChange`** function. When called...
-        - [ ] It should receive two arguments:
-          - [ ] `name` - the `name` attribute of the input being updated
-          - [ ] `value` - the new value to set for that input
-        - [ ] It should update the `checkoutForm` object with the new value from the correct input(s)
+      - [X] The **`handleRemoveItemFromCart`** function. When called...
+        - [X] It should accept a single argument - `productId`
+        - [X] It should decrease the quantity of the item in the `shoppingCart` by `1`, but only if it already exists.
+        - [X] If it doesn't exist, the function should do nothing.
+        - [X] If the new quantity is `0`, it should remove the item from the `shoppingCart`
+      - [x] The **`handleOnCheckoutFormChange`** function. When called...
+        - [x] It should receive two arguments:
+          - [x] `name` - the `name` attribute of the input being updated
+          - [x] `value` - the new value to set for that input
+        - [x] It should update the `checkoutForm` object with the new value from the correct input(s)
       - [ ] The **`handleOnSubmitCheckoutForm`** function. When called...
         - [ ] It should submit the user's order to the API
         - [ ] To submit the user's order, it should leverage the `axios.post` method to send a `POST` request to the `/store` endpoint.
@@ -197,10 +201,10 @@ The following specifications were met on the Express backend and the React front
     - [x] The `img` element should be wrapped in a `Link` component from `react-router-dom`.
       - [x] The `Link` element should have a `to` prop so that when the `img` element is clicked on, it should navigate to the product detail route for that product using its `id` attribute. For example, a product with an `id` of `4` should create a `Link` with its `to` prop set to `/products/4`.
       - [x] The `Link` that wraps the `img` element should be nested somewhere inside an element with the `className` of `media`.
-  - [ ] Should render two `buttons` elements...
-    - [ ] One button with a `className` of `add`. When clicked, it should call the `handleAddItemToCart` function with the `id` of the `product` as its only argument.
-    - [ ] One button with a `className` of `remove`. When clicked, it should call the `handleRemoveItemFromCart` function with the `id` of the `product` as its only argument.
-  - [ ] Should display the current quantity of items that the user has selected in their shopping cart. The quantity should be rendered inside an element with the `className` of `product-quantity`. If none of that particular item have been added to the shopping cart, it should render nothing there.
+  - [x] Should render two `buttons` elements...
+    - [x] One button with a `className` of `add`. When clicked, it should call the `handleAddItemToCart` function with the `id` of the `product` as its only argument.
+    - [x] One button with a `className` of `remove`. When clicked, it should call the `handleRemoveItemFromCart` function with the `id` of the `product` as its only argument.
+  - [x] Should display the current quantity of items that the user has selected in their shopping cart. The quantity should be rendered inside an element with the `className` of `product-quantity`. If none of that particular item have been added to the shopping cart, it should render nothing there.
 
 **Sidebar.jsx**
 
@@ -213,9 +217,9 @@ The following specifications were met on the Express backend and the React front
     - `handleOnCheckoutFormChange` - handler function to update the `checkoutForm` object
     - `handleOnSubmitCheckoutForm` - handler function to submit the user's order to the API
     - `handleOnToggle` - handler function to toggle open/closed `Sidebar` state
-  - [ ] It should always render a `button` element with the `className` of `toggle-button`. When that button is clicked it should change the `isOpen` prop by calling the `handleOnToggle` prop.
-  - [ ] When the sidebar is opened, it should display the `ShoppingCart` and `CheckoutForm` components and should be wider than `350px`.
-  - [ ] When the sidebar is closed, it should only render the toggle button and shouldn't be wider than `150px`.
+  - [x] It should always render a `button` element with the `className` of `toggle-button`. When that button is clicked it should change the `isOpen` prop by calling the `handleOnToggle` prop.
+  - [x] When the sidebar is opened, it should display the `ShoppingCart` and `CheckoutForm` components and should be wider than `350px`.
+  - [x] When the sidebar is closed, it should only render the toggle button and shouldn't be wider than `150px`.
 
 **ShoppingCart.jsx**
 
@@ -246,27 +250,27 @@ The following specifications were met on the Express backend and the React front
         - [x] the `type` prop set to `email`
         - [x] the `name` prop set to `email`
         - [x] the `placeholder` prop set to `student@codepath.org`
-        - [ ] the `value` prop set by `checkoutForm.email`.
-        - [ ] a valid `onChange` prop that uses the `handleOnCheckoutFormChange` function to update the `checkoutForm` state
+        - [x] the `value` prop set by `checkoutForm.email`.
+        - [x] a valid `onChange` prop that uses the `handleOnCheckoutFormChange` function to update the `checkoutForm` state
       - [x] The second input should have:
         - [x] the `type` prop set to `text`
         - [x] the `name` prop set to `name`
         - [x] the `placeholder` prop set to `Student Name`
-        - [ ] the `value` prop set by `checkoutForm.name`.
-        - [ ] a valid `onChange` prop that uses the `handleOnCheckoutFormChange` function to update the `checkoutForm` state
+        - [x] the `value` prop set by `checkoutForm.name`.
+        - [x] a valid `onChange` prop that uses the `handleOnCheckoutFormChange` function to update the `checkoutForm` state
   - [x] Should render a `button` element with the `className` of `checkout-button`.
     - [x] It should contain the text `Checkout`.
-    - [ ] When clicked, it should call the `handleOnSubmit` function.
-      - [ ] If that request fails, the `CheckoutForm` component should display an error message inside an element with the `className` of `error`.
-      - [ ] If the `POST` request is successful...
-        - [ ] The `CheckoutForm` component should display a success message that contains the text `"Success!"` inside an element with the `className` of `success`.
-        - [ ] The `shoppingCart` should be emptied
+    - [x] When clicked, it should call the `handleOnSubmit` function.
+      - [x] If that request fails, the `CheckoutForm` component should display an error message inside an element with the `className` of `error`.
+      - [x] If the `POST` request is successful...
+        - [x] The `CheckoutForm` component should display a success message that contains the text `"Success!"` inside an element with the `className` of `success`.
+        - [x] The `shoppingCart` should be emptied
         - [ ] The `checkoutForm` should be reset to its default state.
 
 **Server** - Create an Express server
-  - [ ] Wire up the appropriate middleware and error handlers in the `app.js` file
-  - [ ] Create a single `GET` request handler at the `/` endpoint. It should respond to all `GET` requests with a JSON object and a `200` status code. The JSON response should contain a single key of `ping` that stores the string value: `pong`. For example: `{ "ping": "pong" }`.
-  - [ ] Have a `server.js` file that starts the app by listening on port `3001`.
+  - [x] Wire up the appropriate middleware and error handlers in the `app.js` file
+  - [x] Create a single `GET` request handler at the `/` endpoint. It should respond to all `GET` requests with a JSON object and a `200` status code. The JSON response should contain a single key of `ping` that stores the string value: `pong`. For example: `{ "ping": "pong" }`.
+  - [x] Have a `server.js` file that starts the app by listening on port `3001`.
 
 **Models** - The API should use a `Store` model that handles the following
   - [x] List all products currently in the `db.json` file
@@ -275,7 +279,7 @@ The following specifications were met on the Express backend and the React front
 
 **Routes** - The API should contain a route mounted at the `/store` endpoint
   - [x] It should respond to `GET` requests to `/store` with an array of all products in the store in this format: `{ "products": products }`
-  - [ ] It should respond to `GET` requests to `/store/:productId` with a single product based on the product's id using this JSON format: `{ "product": product }`
+  - [x] It should respond to `GET` requests to `/store/:productId` with a single product based on the product's id using this JSON format: `{ "product": product }`
   - [ ] It should allow `POST` requests to the `/store` endpoint:
     - [ ] The endpoint should create purchase orders for users and save them to the `db.json` file
     - [ ] The endpoint should accept a request body that contains `shoppingCart` and `user` fields.

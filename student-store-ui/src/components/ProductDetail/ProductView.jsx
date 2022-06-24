@@ -10,7 +10,8 @@ export default function ProductView(props) {
                      product={props.product}
                      productId = {props.productId}
                      shoppingCart={props.shoppingCart}
-                     handleAddItemToCart = {props.handleAddItemToCart}/>
+                     handleAddItemToCart = {props.handleAddItemToCart}
+                     handleRemoveItemFromCart = {props.handleRemoveItemFromCart}/>
     </div>
   )
 }

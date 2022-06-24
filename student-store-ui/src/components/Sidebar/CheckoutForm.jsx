@@ -22,7 +22,7 @@ export default function CheckoutForm(props)
                     className="checkout-form-input"/>
                 <div>
                     <button className="checkout-button" onClick={(props.handleOnSubmitCheckoutForm)}>CHECKOUT</button>
-                    {/* {props.submitSuccess === true ? (<h2 className="success">Success!</h2>) : (<h2 className="error">{props.error}</h2>)} */}
+                     {props.submitSuccess ? (<h4 className="success">Success!</h4>) : (<h4 className="error">Error: Don't Forget To Put In Your Info</h4>)}
                 </div>
             </div>
         </div>

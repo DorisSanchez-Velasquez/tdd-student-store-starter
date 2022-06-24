@@ -47,7 +47,8 @@ export default function ProductDetail(props) {
           <ProductView product={product}
                        productId={productId}
                        shoppingCart={props.shoppingCart}
-                       handleAddItemToCart={props.handleAddItemToCart}/>
+                       handleAddItemToCart={props.handleAddItemToCart}
+                       handleRemoveItemFromCart={props.handleRemoveItemFromCart}/>
         </div>
       )
   }

@@ -23,11 +23,12 @@ export default function App() {
   const [checkoutForm, setCheckoutForm] = useState({name: "", email:""});
   const [searchInput, setSearchInput] = useState("");
   const [isCategory, setIsCategory] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(0)
 
   //OBJECTS AND VARIABLES
   let filteredProducts = [];
   let productExist = false;
-  let submitSuccess;
+  //let submitSuccess;
   let shoppingCartItem = {
     itemId: 0,
     quantity: 0
@@ -129,17 +130,20 @@ export default function App() {
   }
 
   function handleOnSubmitCheckoutForm()
-  {
+  {  
+    //axios.post(`http://localhost:3001/store`, {user: checkoutForm, shoppingCart: shoppingCart})
     axios.post(`https://codepath-store-api.herokuapp.com/store`, {user: checkoutForm, shoppingCart: shoppingCart})
     .then((res) => {
       console.log(res)
       console.log("Successful")
-      submitSuccess = true
+      setSubmitSuccess(true)
+      setCheckoutForm({name: "", email: ""})
+      setShoppingCart([])
     })
     .catch((error) => {
       console.log("Whoops error: ")
       setError(error)
-      submitSuccess = false
+      setSubmitSuccess (false)
     })
   }
 
@@ -148,6 +152,7 @@ export default function App() {
    {
      setIsFetching(true)
      const response = await axios.get('https://codepath-store-api.herokuapp.com/store')
+      //const response= await axios.get('http://localhost:3001/store')
      .then(function (response) {
         console.log(response.data)
         setProducts(response.data.products)
