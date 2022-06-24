@@ -2,25 +2,35 @@
 const express = require(`express`)
 const app = express();
 const morgan = require(`morgan`)
-const cors = require('cors')
+const cors = require(`cors`)
 const router = require(`./routes/store`)
+const {NotFoundError} = require("./utils/errors")
 
 //APP USES
 app.use(express.json())
 app.use(morgan('tiny'))
-app.use("/", router)
 app.use(cors())
+app.use("/", router)
 
-//HEADER
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requeseted-With, Content-Type, Accept");
-    next()
-})
 
 //APP GET REQUESTS
  app.get('/', async(req,res) => {
      res.status(200).json({"ping":"pong"})
  })
+
+//404 ERROR HANDLER
+app.use((req,res,next) => {
+    return next(new NotFoundError())
+})
+
+//GENERIC ERROR HANDLER
+app.use((error,req,res,next) => {
+    const status = error.status || 500
+    const message = error.message || "Something went wrong in the application"
+
+    return res.status(status).json({
+        error: {message, status}
+    })
+})
 
 module.exports = app;

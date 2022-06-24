@@ -24,11 +24,11 @@ export default function App() {
   const [searchInput, setSearchInput] = useState("");
   const [isCategory, setIsCategory] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(0)
+  const [receipt, setReceipt] = useState([])
 
   //OBJECTS AND VARIABLES
   let filteredProducts = [];
   let productExist = false;
-  //let submitSuccess;
   let shoppingCartItem = {
     itemId: 0,
     quantity: 0
@@ -131,12 +131,12 @@ export default function App() {
 
   function handleOnSubmitCheckoutForm()
   {  
-    //axios.post(`http://localhost:3001/store`, {user: checkoutForm, shoppingCart: shoppingCart})
-    axios.post(`https://codepath-store-api.herokuapp.com/store`, {user: checkoutForm, shoppingCart: shoppingCart})
+    axios.post(`http://localhost:3001/store`, {user: checkoutForm, shoppingCart: shoppingCart})
     .then((res) => {
       console.log(res)
       console.log("Successful")
       setSubmitSuccess(true)
+      setReceipt(res.data.purchase.receipt)
       setCheckoutForm({name: "", email: ""})
       setShoppingCart([])
     })
@@ -151,8 +151,7 @@ export default function App() {
    async function getProducts()
    {
      setIsFetching(true)
-     const response = await axios.get('https://codepath-store-api.herokuapp.com/store')
-      //const response= await axios.get('http://localhost:3001/store')
+      const response= await axios.get('http://localhost:3001/store')
      .then(function (response) {
         console.log(response.data)
         setProducts(response.data.products)
@@ -183,7 +182,8 @@ export default function App() {
                    checkoutForm={checkoutForm} 
                    handleOnCheckoutFormChange={handleOnCheckoutFormChange} 
                    handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} 
-                   handleOnToggle={handleOnToggle} />
+                   handleOnToggle={handleOnToggle}
+                   receipt = {receipt} />
 
           <Routes>
             <Route path="/" element={<Home products= {products} 

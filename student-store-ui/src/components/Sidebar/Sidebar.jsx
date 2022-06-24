@@ -28,7 +28,8 @@ export default function Sidebar(props) {
                     handleOnCheckoutFormChange={props.handleOnCheckoutFormChange}
                     handleOnSubmitCheckoutForm={props.handleOnSubmitCheckoutForm}
                     error={props.error}
-                    submitSuccess = {props.submitSuccess}/>
+                    submitSuccess = {props.submitSuccess}
+                    receipt = {props.receipt}/>
     </section>
   )}
 }
